@@ -16,7 +16,11 @@ class MainActivity : AppCompatActivity() {
         name=firstName+" "+lastName
 
         setContentView(binding.root)
-        binding.tv1.text=name
+        binding.tv2.text=name
+
+        if(name !=" "){
+            binding.tv3.text=""
+        }
         binding.btnBack.setOnClickListener(){
             val  intent: Intent =Intent(this@MainActivity,palindrome::class.java)
             startActivity(intent)

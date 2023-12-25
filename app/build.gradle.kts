@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -48,7 +49,11 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     implementation("com.github.bumptech.glide:glide:4.14.1")
     implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation ("androidx.activity:activity-ktx:1.3.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1")
 
+    //KOIN
+    implementation("io.insert-koin:koin-android:3.2.0")
     //retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")

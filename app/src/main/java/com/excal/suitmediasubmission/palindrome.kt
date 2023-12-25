@@ -32,9 +32,9 @@ class palindrome : AppCompatActivity() {
         val textRaw=text.replace("\\s".toRegex(), "").toLowerCase()
         val textBackward=textRaw.reversed()
         if(textBackward==textRaw){
-            Toast.makeText(this@palindrome, "Is Palindrome ! $textBackward", Toast.LENGTH_SHORT ).show()
+            Toast.makeText(this@palindrome, "Is Palindrome ! ", Toast.LENGTH_SHORT ).show()
         }else{
-            Toast.makeText(this@palindrome, "Is Not a Palindrome ! $textBackward", Toast.LENGTH_SHORT ).show()
+            Toast.makeText(this@palindrome, "Is Not a Palindrome ! ", Toast.LENGTH_SHORT ).show()
         }
     }
 }

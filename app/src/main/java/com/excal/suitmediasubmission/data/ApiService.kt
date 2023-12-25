@@ -6,8 +6,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
 interface ApiService {
-    @GET("/api/users")
-    fun getUsers(): Call<Any>
+    @GET("/api/users?page=2")
+    fun getUsers(): Call<UserData>
     companion object {
         private const val BASE_URL = "https://reqres.in/" //
 
